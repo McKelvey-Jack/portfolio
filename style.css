@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li,
+a {
+  font-family: 'Lobster', sans-serif;
+  font-size: 5vh;
+  color: white;
+  text-decoration: none;
+}
+header {
+  background: black;
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 8%;
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.nav-links li a {
+  transition: all 0.7 ease 4sl;
+}
+
+.nav-links li a:hover {
+  color: #7fa6cf;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background-mac.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  padding-top: 40%;
+  font-family: lobster;
+  text-align: center;
+  font-size: 5.5vh;
+  background: none;
+  color: white;
+}
+.icons {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon {
+  padding-top: 3%;
+  padding-right: 4%;
+}
+
+.icon i {
+  font-size: 8vh;
+  padding-right: 20%;
+}
+
+.icon:hover {
+  transition: transform 0.4s;
+  transform: scale(1.5);
+}
+
+.bio {
+  font-family: sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-color: #7fa6cf;
+  display: flex;
+  flex-direction: column;
+}
+
+.biobody {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text1 {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-family: 'Lobster', sans-serif;
+  margin: 0% 8%;
+}
+.text2 {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2em;
+  margin: 0% 8%;
+}
+
+@media screen and (max-width: 900px) {
+  .biobody {
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    width: auto;
+    padding-bottom: 2em;
+  }
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 20, 0.2);
+}
+
+.avatar {
+  margin: 0% 7%;
+  width: 20%;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.skills-title {
+  display: flex;
+}
+
+.skills-title h4 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 1.5em;
+}
+
+.outerskills {
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.innerskills {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerskills li {
+  margin: 0.5em;
+  font-size: 4em;
+}
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: #7fa6cf;
+}
+
+.projectscontainer {
+  display: flex;
+  padding: 2em;
+  height: 87%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background: #b9def0;
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+  align-items: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  margin: 0.5em;
+}
+
+.project-container:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 900px) {
+  .projectscontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+  }
+}
+
+.projecttitle {
+  font-size: 1.1em;
+  padding: 0.5, 0em;
+  font-family: 'Lobster', sans-serif;
+  margin: 0.2em;
+}
+
+.projectpic {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  margin: 0.5em;
+}
+
+.projectbody {
+  font-family: sans-serif;
+  padding: 0.3em;
+  font-size: 0.8rem;
+  max-height: 10em;
+  width: 100%;
+}
+
+.github-link {
+  font-size: 0.8em;
+  color: black;
+  padding: 1em;
+}
+
+.github-link:hover {
+  color: gray;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: #7fa6cf;
+}
+
+.sectiontitle {
+  font-family: 'Lobster';
+  font-size: 3em;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.contact-form {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background: #cde4f0;
+  padding-top: 0.7em;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+}
+
+.contact-form h1 {
+  padding: 1em;
+}
+
+.txtb {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 0.2em 0.5em;
+  background: #b9def0;
+  padding: 1em;
+  height: 80%;
+  width: 90%;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  font-family: 'Lobster', sans-serif;
+}
+
+.txtb input {
+  padding-top: 1.5em;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding-top: 2em;
+}
+
+.button {
+  color: black;
+}
+
+.button:hover {
+  color: gray;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #7fa6cf;
+  padding: 8px;
+}
+.footertext {
+  font-family: lobster;
+  color: white;
+  padding-right: 2em;
+}
