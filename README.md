@@ -16,3 +16,6 @@ I have added some interactive elements to the page using the hover element in cs
 There are links to GitHub repos and some of my social media pages.
 
 Is it responsive i hear you ask? almost…..
+
+
+Update. We are responsve!
