@@ -171,7 +171,7 @@ hr {
 
 .projects {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
   background-color: #7fa6cf;
 }
@@ -207,6 +207,7 @@ hr {
   .projectscontainer {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
   .project-container {
     width: 90%;
