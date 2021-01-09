@@ -1,7 +1,8 @@
 <title>Project</title>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet">
@@ -9,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 
 <body>
@@ -27,16 +31,6 @@
         <h1> Jack McKelvey </h1>
         <p>Junior Software Engineer<p>
             <div class=icons>
-              <a href="https://www.linkedin.com/in/jack-mckelvey-60006ab5/" target=blank;>
-                <p class="icon">
-                  <i class="devicon-linkedin-plain colored"></i>
-                  
-              </a>
-          </p>
-          <a href="https://github.com/McKelvey-Jack" target=blank;>
-            <p class="icon ">
-              <i class="devicon-github-plain-wordmark colored"></i>
-          </a></p>
       </div>
     </div>
   </div>
@@ -50,7 +44,7 @@
 </div>
 
  <div class=biobody>
-    <img class ="avatar" src="images/avatar.svg" />
+    <img class ="avatar" src="images/avatar.svg"/>
          <div class="textcontainer">
              <p class="text1"> Hello there and welcome to my first ever portfolio page</p>
             <p class="text2"> This is normally you might find someone talking about how they have dreamed of becoming a software developer since they were old enough to walk. I won't lie to you, thats not true in my case. In fact it couldn't be further from the truth. I made it to 20 something with the rather vague 'computers' being the umbrella term I used for anything that even remotely involved a computer. These days I would hope that my knowledge stretches a tad beyond that. When the coronavirus pandemic hit i thought i would learn to code when I was placed on furlough. Fast forward a few months I am halfway through the brilliant coding bootcamp at northcoders. So far I have loved every second of it. You can view some of my work further down this page. Ohh, and this page is my first crack at using HTML & CSS so please be gentle...  <i>Jack</i></p>
@@ -71,6 +65,7 @@
       <li><i class="devicon-git-plain-wordmark"></i></li>
       <li><i class="devicon-visualstudio-plain-wordmark colored"></i></li>
       <li><i class="devicon-react-original-wordmark"></i></li>
+      <li><i class="devicon-vuejs-plain colored"></i></li>
     </ul>
   </div>
 </div>
@@ -79,65 +74,65 @@
 
 
 <section class="projects">
+
   <div class="sectiontitle">
    <h3 id="projectshead">projects</h3>
      <hr class="dotted">
   </div>
+ 
 
  <div class="projectscontainer">
-
    <div class="project-container">
        <h5 class="projecttitle">NC-News-API</h5>
-        <img src="https://previews.dropbox.com/p/thumb/AA-FCO7IdeepmVCJCbP0abSFut1cZuLZ5IbLIXGtF5mhWvawbvMC9fpi_xBhrJp7UEg844HddnuopHgEiQGHUs4ErtFAyheFbn1VGcgJN_PGT5UAucnLZZisjkEPo5n_xFLs14L8sC4F_FjiLUZWxVnnUAMj6PvHRMWyvitn2PhT5FGqo44Ou-J7nXn9njflTqLd0GSJGyppSmOQo5zyz_xmQV87iN62aG6JBQjwssJ8YHmW5FYXKYz49FPAuSoun0YVx9m7ygTD3cXRp6w0ED-_Hsj1z-ixoTS0SKpQviZXOzS-4xDhCrOZScyxMDlNkQLl1NkMJSzNv6zYobBUDEfi-StT7MZzX_fwTuYd2BjaUQ/p.png?fv_content=true&size_mode=5" class ="projectpic">
+        <img src="images/Nc-News.jpg" class ="projectpic">
 
-          <p class="projectbody">This is an API containing topics, articles, comments and user data. It is built using node.js with PostgresSQL database. Knx was used to keep as mcuh of teh code in javascript as possible and i used express for the server. The application was developed using TDD with jest. Frontend pending.... </p>
-            <a href="https://github.com/McKelvey-Jack" target=blank class="github-link";>View me on github</a>
+          <p class="projectbody">This is a full stack application where the user can view articles on selected topics. The user can add their own articles and comments along with some other functionality. The tech is React.js on the frontend with Node.js and postgresSQL on the backend.  
+          </p>
+            <a href="https://github.com/McKelvey-Jack/fe-nc-news" target=blank class="project-github-link";>View me on github</a>
     </div>
 
    <div class="project-container">
-       <h5 class="projecttitle">Command-Line Pokemon Game</h5>
-        <img src="https://www.nicepng.com/png/detail/154-1542699_600px-025pikachu-pokemon-sun-and-moon-pikachu.png" class ="projectpic">
+       <h5 class="projecttitle">Crypto-Vue</h5>
+        <img src="images/Crypto-Vue.jpeg" class ="projectpic">
      
-          <p class="projectbody">This is a simple game where the user/s can battle pokemon in the command line. The app was built using object orientated programming in node.js. The app was developed with TDD using jest. This was a pair programming project build in a team of 2. </p>
-          <a href="https://github.com/McKelvey-Jack" target=blank class="github-link";>View me on github</a>
+          <p class="projectbody">This is a frontend app built wuth Vue.js that retrieves and displays data on a range of poular cryptocurrencies. A user can click on a currency and view further information including a chart that shows historical data for the currency.</p>
+          <a href="https://github.com/McKelvey-Jack" target=blank class="project-github-link";>View me on github</a>
      </div>
 
    <div class="project-container">
        <h5 class="projecttitle">Portfolio Site</h5>
         <img src="images/portfolio-cover.png" class ="projectpic">
-          <p class="projectbody">This project is the very website you are currently on. It as built entirely with HTML/CSS. This was my first exposure of both of these technologies and plenty of trail and error was used. I used flexbox for the layout and media queries where to make thr page responsive. </P>
-            <a href="https://github.com/McKelvey-Jack" target=blank class="github-link";>View me on github</a>
+          <p class="projectbody">This project is the very website you are currently on. It as built entirely with HTML/CSS. This was my first exposure of both of these technologies and plenty of trail and error was used. I used flexbox for the layout and media queries where to make the page responsive. </P>
+            <a href="https://github.com/McKelvey-Jack/portfolio" target=blank class="project-github-link";>View me on github</a>
      </div>
 
   </div>
+
+  <a class="github-link" href="https://github.com/McKelvey-Jack" target=blank;><p>
+     <i class="devicon-github-original-wordmark colored"></i>More Projects</p>
+  </a>
 </section>
 
 
+  <section class="contact">
 
- <section class="contact">
-  <div class="sectiontitle">
-   <h3 id="contacthead">Contact Me</h3>
+    <div class="contacttitle">
+   <h3 id="contacthead">Contact </h3>
      <hr class="dotted">
-</div>
-   <div class="contact-container">
-       <div class="contact-form">
-         <div class ="txtb">
-           <label>Full Name:<label>
-             <input type="text" name="" value="" placeholder="Please Enter Your Name">
-         </div>
-             
-        <div class ="txtb">
-           <label>Email<label>
-             <input type="text" name="" value="" placeholder="Email Address">
+    </div>
+
+     <div class="contact-container">
+        <div class="email-info-conatiner">
+          <p class="contact-icon"> <a href="mailto:jackmckelvey@hotmail.co.uk"> <i class="fa fa-envelope-open" aria-hidden="true"></i> Email Me</a>   </p>
+       
         </div>
-             
-        <div class ="txtb">
-           <label>Message<label>
-             <textarea placeholder="Hi Jack..."></textarea>
-         </div>
-             <a class="button">Send</a>
-             
+        <div class="email-info-conatiner">
+           <p class="contact-icon">
+           <a href="https://www.linkedin.com/in/jack-mckelvey-60006ab5/" target=blank;>
+              <i class="devicon-linkedin-plain colored"></i> Connect with me on LinkedIn</p> 
+          </a>
         </div>
+    </div>
   </section>
 
 

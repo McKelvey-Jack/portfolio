@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +15,7 @@
 
 li,
 a {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 5vh;
   color: white;
   text-decoration: none;
@@ -22,7 +26,7 @@ header {
   position: sticky;
   justify-content: flex-end;
   align-items: center;
-  padding: 8px 8%;
+  padding: 0.5em;
 }
 
 .nav-links {
@@ -47,12 +51,12 @@ header {
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .hero-text {
-  padding-top: 40%;
-  font-family: lobster;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 5.5vh;
   background: none;
@@ -67,8 +71,8 @@ header {
 }
 
 .icon {
-  padding-top: 3%;
-  padding-right: 4%;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 .icon i {
@@ -77,16 +81,15 @@ header {
 }
 
 .icon:hover {
-  transition: transform 0.4s;
   transform: scale(1.5);
+  transition-duration: 0.5s;
 }
-
 .bio {
   font-family: sans-serif;
   min-width: 100vw;
   min-height: 100vh;
   background-size: cover;
-  background-color: #7fa6cf;
+  background-color: #92c4f7;
   display: flex;
   flex-direction: column;
 }
@@ -106,11 +109,11 @@ header {
 .text1 {
   padding-bottom: 1em;
   font-size: 1.5em;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0% 8%;
 }
 .text2 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   margin: 0% 8%;
 }
@@ -121,8 +124,7 @@ header {
     align-items: center;
   }
   .avatar {
-    width: auto;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
   }
 }
 
@@ -132,7 +134,8 @@ hr {
 
 .avatar {
   margin: 0% 7%;
-  width: 20%;
+  height: 18em;
+  width: 18em;
 }
 
 .skillsContainer {
@@ -147,7 +150,7 @@ hr {
 }
 
 .skills-title h4 {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
 }
 
@@ -171,15 +174,16 @@ hr {
 
 .projects {
   width: 100vw;
-  /* height: 100vh; */
   background-size: cover;
-  background-color: #7fa6cf;
+  background-color: #92c4f7;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectscontainer {
   display: flex;
   padding: 2em;
-  height: 87%;
+  height: 70%;
   width: 100%;
   justify-content: space-between;
 }
@@ -188,8 +192,8 @@ hr {
   display: flex;
   flex-direction: column;
   background: #b9def0;
-  width: 60%;
-  height: 100%;
+  width: 50%;
+  height: 70%;
   border-radius: 10px;
   box-shadow: 5px 10px #888888;
   align-items: flex-start;
@@ -198,12 +202,7 @@ hr {
   margin: 0.5em;
 }
 
-.project-container:hover {
-  transform: scale(1.1);
-  transition: 0.7s;
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .projectscontainer {
     flex-direction: column;
     align-items: center;
@@ -220,15 +219,16 @@ hr {
 .projecttitle {
   font-size: 1.1em;
   padding: 0.5, 0em;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0.2em;
 }
 
 .projectpic {
-  width: 100%;
-  height: 70%;
+  width: 25em;
+  height: 25em;
   border-radius: 5px;
   margin: 0.5em;
+  border: 1px solid black;
 }
 
 .projectbody {
@@ -239,113 +239,100 @@ hr {
   width: 100%;
 }
 
-.github-link {
-  font-size: 0.8em;
+.project-github-link {
+  font-size: 1em;
+  margin: 0.5em;
   color: black;
-  padding: 1em;
 }
 
-.github-link:hover {
-  color: gray;
-  transition: 0.5s;
-  cursor: pointer;
+.github-link {
+  text-align: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: black;
+  margin-bottom: 5em;
+}
+
+.github-link i {
+  margin-right: 0.3em;
+}
+
+.github-link p {
+  font-size: 1em;
+  margin-left: 1em;
 }
 
 .contact {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-color: #7fa6cf;
+  background-color: #92c4f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectiontitle {
-  font-family: 'Lobster';
+  font-family: 'Roboto', sans-serif;
   font-size: 3em;
   text-align: center;
 }
 
-.contact-container {
-  display: flex;
+.contacttitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  text-align: center;
   width: 100%;
-  height: 70%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4em;
 }
 
-.contact-form {
-  font-size: 2em;
+.contact-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
-  border: 2px solid gray;
-  border-radius: 10px;
-  background: #cde4f0;
-  padding-top: 0.7em;
+  margin-top: 2em;
+  margin-left: 2em;
 }
 
-@media screen and (max-width: 700px) {
-  .contact-form {
-    width: 80%;
-    flex-wrap: wrap;
+.email-info-conatiner {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .email-info-conatiner {
+    justify-content: flex-start;
   }
 }
 
-.contact-form h1 {
-  padding: 1em;
-}
-
-.txtb {
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 0.2em 0.5em;
-  background: #b9def0;
-  padding: 1em;
-  height: 80%;
-  width: 90%;
-}
-
-.txtb label {
-  display: block;
-  text-align: left;
-  font-family: 'Lobster', sans-serif;
-}
-
-.txtb input {
-  padding-top: 1.5em;
-  width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.txtb textarea {
-  width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-  padding-top: 2em;
-}
-
-.button {
+.email-info-conatiner a {
   color: black;
+  font-style: italic;
+}
+.email-info-conatiner a {
+  color: black;
+  font-style: italic;
 }
 
-.button:hover {
-  color: gray;
-  transition: 0.5s;
-  cursor: pointer;
+.contact-icon {
+  font-size: 2em;
+  margin-right: 1em;
 }
 
 footer {
   display: flex;
   justify-content: flex-end;
-  background-color: #7fa6cf;
+  background-color: #92c4f7;
   padding: 8px;
 }
 .footertext {
-  font-family: lobster;
+  font-family: 'Roboto', sans-serif;
   color: white;
   padding-right: 2em;
 }
